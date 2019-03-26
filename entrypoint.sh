@@ -8,5 +8,5 @@ then
   ADDITIONNAL_PARAMETER="--key-file ${KEY_FILE}"
 fi
 
-gcsfuse "${ADDITIONNAL_PARAMETER}" "${GCS_BUCKET}" "${MOUNT_DIR}"
+gcsfuse ${ADDITIONNAL_PARAMETER} "${GCS_BUCKET}" "${MOUNT_DIR}"
 exec $@
